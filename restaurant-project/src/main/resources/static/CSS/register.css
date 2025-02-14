@@ -1,0 +1,103 @@
+body {
+    background-color: #be9765;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input, label, span {
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+span {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgray;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, label {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,118 @@
+.ribbon {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ribbon li {
+    width: 100%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.ribbon a {
+    text-decoration: none;
+    color: #aeaeae;
+    font-style: italic;
+    font-size: 100%;
+    transition: color 0.3s ease;
+}
+
+.ribbon a:hover {
+    color: #f7a002;
+}
+
+.content {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease;
+    padding: 10px 0;
+}
+
+.ribbon li a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .ribbon li a {
+    color: black;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 60px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.image-container.scrolled img {
+    opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+    .ribbon li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ribbon {
+        flex-wrap: wrap;
+    }
+
+    .ribbon li {
+        width: auto;
+        margin: 5px 10px;
+    }
+
+    .ribbon li a {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    .image-container {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ribbon li a {
+        font-size: 16px;
+    }
+
+    .ribbon li {
+        margin: 5px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    .image-container {
+        margin-top: 40px;
+    }
+}

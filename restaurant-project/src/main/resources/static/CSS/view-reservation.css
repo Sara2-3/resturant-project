@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/reservation-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #8B4513;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.username {
+    color: #A0522D;
+}
+
+.reservation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reservation-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #8B4513;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reservation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    border-bottom: 2px solid #8B4513;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #8B4513;
+}
+
+.card-body p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #A0522D;
+}
+
+.card-body strong {
+    color: #8B4513;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-block;
+    background-color: #db9648;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #723b1d;
+    transform: translateY(-3px);
+}
+
+.btn-delete {
+    background-color: #db9648;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #723b1d;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .actions .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+    top: 0;
+}
+
+.home {
+    color: white;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    color: white;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}

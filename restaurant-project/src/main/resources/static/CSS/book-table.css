@@ -1,0 +1,81 @@
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #3a5d20;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #3a5d20;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-info button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3a5d20;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.contact-info button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .book {
+        flex-direction: column;
+    }
+
+    .contact-info, .image-container {
+        flex: none;
+        width: 100%;
+    }
+
+    .book-image {
+        max-width: 80%;
+    }
+}

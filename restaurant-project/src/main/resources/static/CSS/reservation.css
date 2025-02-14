@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c3037;
+    color: #db9648;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #db9648;
+    border-radius: 10px;
+    background-color: #db9648;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #2c3037;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+}
+
+p {
+    color: #2c3037;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: red;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+}
+
+.link {
+    color: red;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    margin-left: 300px;
+}
+
+label {
+    color: #2c3037;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid brown;
+    border-radius: 5px;
+    background-color: #db9648;
+    color: #2c3037;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2c3037;
+    color: #db9648;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8B4513;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 7px;
+    }
+
+    button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    input {
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
